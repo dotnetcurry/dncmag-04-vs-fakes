@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FakesDemo.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FakesDemo.Fakes.ShimClassA">
+            <summary>Shim type of FakesDemo.ClassA</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassA.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassA.#ctor(FakesDemo.ClassA)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassA.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassA.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassA.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassA.Constructor">
+            <summary>Sets the shim of ClassA.ClassA()</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassA.GetNameILogger">
+            <summary>Sets the shim of ClassA.GetName(ILogger logger)</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.ShimClassA.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassA.AllInstances.GetNameILogger">
+            <summary>Sets the shim of ClassA.GetName(ILogger logger)</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.ShimClassB">
+            <summary>Shim type of FakesDemo.ClassB</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassB.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassB.#ctor(FakesDemo.ClassB)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassB.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.ShimClassB.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassB.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassB.Constructor">
+            <summary>Sets the shim of ClassB.ClassB()</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.ShimClassB.DoomsDay">
+            <summary>Sets the shim of ClassB.DoomsDay()</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.ShimClassB.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.StubClassA">
+            <summary>Stub type of FakesDemo.ClassA</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubClassA.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubClassA.InitializeStub">
+            <summary>Initializes a new instance of type StubClassA</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubClassA.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubClassA.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubClassA.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.StubClassB">
+            <summary>Stub type of FakesDemo.ClassB</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubClassB.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubClassB.InitializeStub">
+            <summary>Initializes a new instance of type StubClassB</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubClassB.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubClassB.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FakesDemo.Fakes.StubClassB.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FakesDemo.Fakes.StubILogger">
+            <summary>Stub type of FakesDemo.ILogger</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubILogger.#ctor">
+            <summary>Initializes a new instance of type StubILogger</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubILogger.fd::FakesDemo#ILogger#Log(System.String)">
+            <summary>Sets the stub of ILogger.Log(String message)</summary>
+        </member>
+        <member name="M:FakesDemo.Fakes.StubILogger.fd::FakesDemo#ILogger#ShouldLog">
+            <summary>Sets the stub of ILogger.ShouldLog()</summary>
+        </member>
+        <member name="F:FakesDemo.Fakes.StubILogger.LogString">
+            <summary>Sets the stub of ILogger.Log(String message)</summary>
+        </member>
+        <member name="F:FakesDemo.Fakes.StubILogger.ShouldLog">
+            <summary>Sets the stub of ILogger.ShouldLog()</summary>
+        </member>
+    </members>
+</doc>
