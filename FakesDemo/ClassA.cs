@@ -35,11 +35,17 @@ namespace FakesDemo
         }
 
 
-        //Do not run this in the real code!
-        //public static void DeleteC()
-        //{
-        //    Directory.Delete(@"c:\", true);
-        //}
+        //Do not try to delete C:\ in real life
+        //For example we've pointed it to a 
+        //relatively harmless C:\temp folder
+        //which may or maynot exist on your 
+        //machine. However since we are 
+        //testing Shim Not Impletemented 
+        //exception we will never hit this code
+        public static void DeleteC()
+        {
+            Directory.Delete(@"c:\temp", true);
+        }
 
     }
 }

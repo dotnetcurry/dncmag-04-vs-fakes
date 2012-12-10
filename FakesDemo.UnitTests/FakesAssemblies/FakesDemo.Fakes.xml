@@ -55,6 +55,9 @@
         <member name="P:FakesDemo.Fakes.ShimClassB.Constructor">
             <summary>Sets the shim of ClassB.ClassB()</summary>
         </member>
+        <member name="P:FakesDemo.Fakes.ShimClassB.DeleteC">
+            <summary>Sets the shim of ClassB.DeleteC()</summary>
+        </member>
         <member name="P:FakesDemo.Fakes.ShimClassB.DoomsDay">
             <summary>Sets the shim of ClassB.DoomsDay()</summary>
         </member>
